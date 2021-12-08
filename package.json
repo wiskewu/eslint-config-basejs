@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-basejs",
   "description": "A common JavaScript eslint code style of library development",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "wiskewu",
     "email": "wiskewu@gmail.com"
