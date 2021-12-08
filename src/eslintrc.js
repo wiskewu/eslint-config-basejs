@@ -263,7 +263,7 @@ module.exports = {
         "no-multi-spaces": ["error", {
             "ignoreEOLComments": false,
             "exceptions": {
-                "Property": "true"
+                "Property": true
             }
         }],
         // 禁止使用多行字符串
@@ -342,10 +342,8 @@ module.exports = {
         // 要求所有的 var 声明出现在它们所在的作用域顶部
         "vars-on-top": "error",
         // 需要把立即执行的函数包裹起来
-        "wrap-iife": ["error", {
-            "inside": {
-                "functionPrototypeMethods": true
-            }
+        "wrap-iife": ["error", "inside", {
+            "functionPrototypeMethods": true
         }],
         // 要求或禁止 “Yoda” 条件
         "yoda": ["error", "never", {
@@ -427,7 +425,7 @@ module.exports = {
         // 强制数组元素间出现换行
         "array-element-newline": ["error", {
             "multiline": true,
-            "minItems": false
+            "minItems": null
         }],
         // 禁止或强制在代码块中开括号前和闭括号后有空格
         "block-spacing": ["error", "never"],

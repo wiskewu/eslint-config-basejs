@@ -9,6 +9,7 @@
   "bugs": {
     "url": "https://github.com/wiskewu/eslint-config-basejs/issues"
   },
+  "files": ["dist"],
   "private": false,
   "devDependencies": {
     "eslint": "^7.12.1",

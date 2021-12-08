@@ -1,2 +1,4 @@
 test-cases/
 yarn-error.log
+src/
+gulpfile.js

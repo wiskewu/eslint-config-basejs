@@ -136,7 +136,7 @@ module.exports = {
         "no-multi-spaces": [ "error", {
             ignoreEOLComments: false,
             exceptions: {
-                Property: "true"
+                Property: true
             }
         } ],
         "no-multi-str": "error",
@@ -179,10 +179,8 @@ module.exports = {
         "require-await": "error",
         "require-unicode-regexp": "error",
         "vars-on-top": "error",
-        "wrap-iife": [ "error", {
-            inside: {
-                functionPrototypeMethods: true
-            }
+        "wrap-iife": [ "error", "inside", {
+            functionPrototypeMethods: true
         } ],
         yoda: [ "error", "never", {
             exceptRange: true
@@ -232,7 +230,7 @@ module.exports = {
         "array-bracket-spacing": [ "error", "never" ],
         "array-element-newline": [ "error", {
             multiline: true,
-            minItems: false
+            minItems: null
         } ],
         "block-spacing": [ "error", "never" ],
         "brace-style": [ "error", "1tbs", {
